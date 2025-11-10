@@ -34,7 +34,7 @@ Este problema consiste em encontrar o k-ésimo maior elemento em um array de int
 
 - Dificuldade: Médio
 - Link: https://leetcode.com/problems/kth-largest-element-in-an-array/
-- Solução: [Código]()
+- Solução: [Código](/Documentos/KhLargestElement.py)
 
 ## Exercício 2 - Median of Two Sorted Arrays
 ### Descrição.
@@ -44,22 +44,24 @@ Este problema envolve encontrar a mediana de dois arrays já ordenados, com tama
 
 - Dificuldade: Difícil
 - Link: https://leetcode.com/problems/median-of-two-sorted-arrays/
-- Solução: [Código]()
+- Solução: [Código](/Documentos/MedianOfTwoSorted.py)
 
-## Exercício 3 - 
+## Exercício 3 - Reverse Pairs
 ### Descrição.
+Este problema envolve contar o número de reverse pairs em um array de inteiros, onde um par (i, j) é considerado válido se i < j e nums[i] > 2 * nums[j]. Uma solução eficiente é baseada em um merge sort modificado, que utiliza a estratégia de divisão e conquista: o array é recursivamente dividido em duas metades e, em cada etapa, além de ordenar essas metades, contamos quantos pares válidos existem entre a metade esquerda e a metade direita. Como essas metades estão ordenadas, é possível usar dois ponteiros para contar os pares em tempo linear por nível de recursão, resultando em uma complexidade total de O(n log n), bem mais eficiente do que a abordagem ingênua de O(n^2).
 
-![](Documentos/screenshots/imagem01.png)
+![](Documentos/screenshots/Ex-3.png)
 
-- Dificuldade: 
-- Link: 
-- Solução: [Código]()
+- Dificuldade: Difícil
+- Link: https://leetcode.com/problems/reverse-pairs/
+- Solução: [Código](/Documentos/ReversePairs.py)
 
-## Exercício 4 - 
+## Exercício 4 - Merge k Sorted Lists
 ### Descrição.
+Este problema envolve mesclar k listas simplesmente encadeadas já ordenadas em ordem crescente em uma única lista também ordenada. Uma solução eficiente utiliza um min-heap (estrutura de prioridade) para sempre extrair o nó de menor valor entre as k listas. Inicialmente, insere-se no heap o primeiro nó de cada lista; em seguida, repetidamente remove-se o menor elemento do heap, anexando-o à lista resultado, e se o nó removido tiver um próximo, este também é inserido no heap. Esse processo continua até que todos os nós tenham sido processados, resultando em uma complexidade de tempo O(N log k), onde N é o número total de elementos e k é a quantidade de listas.
 
-![](Documentos/screenshots/imagem01.png)
+![](Documentos/screenshots/Ex-4.png)
 
-- Dificuldade: 
-- Link: 
-- Solução: [Código]()
+- Dificuldade: Difícil
+- Link: https://leetcode.com/problems/merge-k-sorted-lists/
+- Solução: [Código](/Documentos/MergekSorted.py)
